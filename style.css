@@ -1,0 +1,186 @@
+/*style sheet*/
+
+body {
+	font-family: helvetica;
+	background-color: white;
+	margin: 2%;
+	height: 100%;
+	padding-left: 8%;
+	padding-right: 10%;
+}
+
+header {
+	display: inline;
+	position: relative;
+}
+
+header .left {
+	padding-bottom: 0.5%;
+	float: left;
+}
+header .right {
+	padding-bottom: 0.5%;
+	float: right;
+}
+
+li {
+	list-style: none;
+}
+
+li a {
+	color: #CCCCCC;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+}
+
+.mob_nav {
+	display: none;
+}
+
+nav {
+	clear: both;
+	background-color: #999999;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+nav li {
+	font-size: 20px;
+	display: inline;
+	padding: 5%;
+}
+
+.main {
+	position: relative;
+	height: auto;
+}
+
+#sidebar {
+	width: 15%;
+	height: 80%;
+	background-color: #CCCCCC;
+	float: left;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#sidebar li {
+	margin: 10%;
+}
+
+#main {
+	width: 85%;
+	height: 80%;
+	float: right;
+}
+
+#main li {
+	margin-left: 3%;
+	margin-right: 4%;
+}
+
+footer {
+	clear: both;
+	position: absolute;
+	bottom: 2%;
+	right: 2%;
+	width: 100%;
+	text-align: right;
+}
+
+.mobile_div {
+	display: none;
+}
+
+/*-------------------------------------------------------------------------------
+	Media Queries
+-----------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+
+body {
+	width: 100%;
+	padding: 2px;
+	position: absolute;
+}
+
+header {
+	clear: both;
+	height: 5px;
+}
+.left {
+	text-align: center;
+	width: 95%;
+	position: relative;
+}
+.right {
+	display: none;
+}
+
+nav {
+	display: none;
+}
+
+.mob_nav {
+	display: inline;
+	position: fixed;
+	clear: both;
+    text-align: center;
+	width: 90%;
+	bottom: 0;
+	margin-bottom: 20px;
+	z-index: 2;
+	background-color: #999999;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.mob_nav li a {
+	font-size: 20px;
+	display: inline;
+	color: #112233;
+	text-decoration: none;
+}
+
+
+.mobile_div {
+	display: block;
+	position: relative;
+	clear: both;
+	width: 90%;
+	background-color: white;
+	text-align: center;
+}
+
+#sidebar {
+	display: none;
+}
+#main {
+	position: relative;
+	margin: 15px;
+	float: none;
+	overflow: auto;
+	height: 100%;
+	padding-bottom: 200px
+}
+
+li a {
+	color: blue;
+	text-decoration: none;
+}
+
+footer {
+	display: none;
+}
+
+
+}
